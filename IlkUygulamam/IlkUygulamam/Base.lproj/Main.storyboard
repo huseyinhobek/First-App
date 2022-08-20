@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IlkUygulamam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANITKABİR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEa-c6-8R1">
+                                <rect key="frame" x="145.5" y="433" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anitkabir" translatesAutoresizingMaskIntoConstraints="NO" id="VuW-Fo-t9M">
+                                <rect key="frame" x="0.0" y="119" width="414" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="S82-24-mBe"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXb-yA-2jf">
+                                <rect key="frame" x="135" y="489" width="144" height="66"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Degistir">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NuW-hL-scg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VuW-Fo-t9M" firstAttribute="centerX" secondItem="wEa-c6-8R1" secondAttribute="centerX" id="Oik-ID-mXp"/>
+                            <constraint firstItem="VuW-Fo-t9M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="RB7-Fs-KgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TXb-yA-2jf" secondAttribute="bottom" constant="307" id="TJq-Js-df8"/>
+                            <constraint firstItem="wEa-c6-8R1" firstAttribute="centerX" secondItem="TXb-yA-2jf" secondAttribute="centerX" id="dE2-4b-Aci"/>
+                            <constraint firstItem="VuW-Fo-t9M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ga9-H3-Jvb"/>
+                            <constraint firstItem="VuW-Fo-t9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hiz-Z2-PGa"/>
+                            <constraint firstItem="TXb-yA-2jf" firstAttribute="top" secondItem="wEa-c6-8R1" secondAttribute="bottom" constant="26" id="kZe-TR-LrL"/>
+                            <constraint firstItem="wEa-c6-8R1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kr4-jS-evS"/>
+                            <constraint firstItem="TXb-yA-2jf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="mPf-d3-vN1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyLabel" destination="wEa-c6-8R1" id="Sby-AC-4fD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="anitkabir" width="1000" height="680"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
